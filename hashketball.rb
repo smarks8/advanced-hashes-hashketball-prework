@@ -118,11 +118,10 @@ def game_hash
 end 
 
 def good_practices
-  game_hash.select do |location, team_data|
+  game_hash.each do |location, team_data|
+    puts location
       team_data.each do |attribute, data|
-        puts attribute
-        puts attribute
-        puts attribute
+
         binding.pry
  
 
